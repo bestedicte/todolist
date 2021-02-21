@@ -1,12 +1,12 @@
 body {
 	margin: 0;
 	padding: 0;
-    background-color: #FAFAFA;
+	background-color: #fafafa;
 }
 
 .content {
-    max-width: 1200px;
-    margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,47 +16,55 @@ body {
 h1 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 72px;
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .input-wrapper {
-    position: relative;
+	position: relative;
 }
 
 input {
 	width: 615px;
-    padding: 16px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 16px;
+	padding: 16px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-size: 16px;
 }
 
 #add-button {
-    background: url('./Vector.svg');
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: 24px;
-    right: 17px;
-    cursor: pointer;
+	background: url('./Vector.svg');
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 24px;
+	right: 17px;
+	cursor: pointer;
 }
 
 .todo-wrapper {
-    max-width: 604px;
-    margin: auto;
+	max-width: 604px;
+	margin: auto;
 }
 
 li {
-    font-family: Helvetica;
-    list-style: none;
-    margin-bottom: 6px;
+	font-family: Helvetica;
+	list-style: none;
+	margin-bottom: 6px;
 }
 
 .completed {
-    text-decoration: line-through;
-    color: #828282;
+	text-decoration: line-through;
+	color: #828282;
 }
 
 li:not(.completed):hover {
-    text-decoration: underline;
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+	input {
+		width: 100%;
+		margin: auto;
+		display: block;
+	}
 }
